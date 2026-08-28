@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ridgeft"
+version = "1.0.0"
+description = "RidgeFT: exemplar-free analytical continual machine-generated text attribution."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "RidgeFT authors" }]
+dependencies = [
+    "numpy>=1.23",
+]
+
+[tool.setuptools]
+packages = ["ridgeft"]

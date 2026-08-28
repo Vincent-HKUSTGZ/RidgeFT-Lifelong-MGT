@@ -1,0 +1,8 @@
+# core
+numpy>=1.23
+
+# real-data example (examples/run_mgt_academic.py)
+torch>=2.0
+transformers>=4.36
+scikit-learn>=1.2
+sentencepiece>=0.1.99
