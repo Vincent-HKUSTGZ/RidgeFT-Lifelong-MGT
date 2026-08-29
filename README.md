@@ -1,5 +1,9 @@
 # RidgeFT — Exemplar-Free Analytical Continual MGT Attribution
 
+Official repository for our **EMNLP 2026 Main Conference** paper,
+*When New Generators Arrive: Lifelong Machine-Generated Text Attribution via
+Ridge Feature Transfer*.
+
 **RidgeFT** (**Ridge** **F**eature **T**ransfer) is a fully exemplar-free,
 backprop-free framework for class-incremental machine-generated text (MGT)
 attribution. A text encoder is fine-tuned **once** on the initial (base)
@@ -9,8 +13,8 @@ no replay buffer, no distillation, no encoder retraining. Old-class knowledge
 is never overwritten, so catastrophic forgetting is impossible by
 construction, and "adding a new LLM" reduces to one dense matrix solve.
 
-This repository contains the reference implementation of the method only
-(no baselines, no experiment harness).
+This repository contains the official reference implementation of the method
+only (no baselines or full experiment harness).
 
 ---
 
@@ -121,8 +125,8 @@ per-dataset tuning.
 ## 3. Installation
 
 ```bash
-git clone <this-repo>
-cd RidgeFT
+git clone https://github.com/Vincent-HKUSTGZ/RidgeFT-Lifelong-MGT.git
+cd RidgeFT-Lifelong-MGT
 pip install -e .
 ```
 
@@ -215,7 +219,8 @@ Steps performed by the script (mirroring the paper recipe):
 ## 6. Repository layout
 
 ```
-RidgeFT/
+RidgeFT-Lifelong-MGT/
+├── LICENSE
 ├── pyproject.toml
 ├── requirements.txt
 ├── README.md
@@ -235,6 +240,22 @@ RidgeFT/
 
 ---
 
-## 7. Citation
+## 7. License
 
-If you use RidgeFT, please cite the accompanying paper.
+RidgeFT is released under the [MIT License](LICENSE).
+
+<sub>Repository note: this repository was organized with Codex; if you encounter any issues, please open a GitHub issue.</sub>
+
+## 8. Citation
+
+If you use RidgeFT in your research, please cite our paper:
+
+```bibtex
+@inproceedings{SLHWHYH26,
+author = {Zhen Sun and Yifan Liao and Zhicong Huang and Jiaheng Wei and Cheng Hong and Yutao Yue and \textbf{Xinlei He}},
+title = {{When New Generators Arrive: Lifelong Machine-Generated Text Attribution via Ridge Feature Transfer}},
+booktitle = {{Conference on Empirical Methods in Natural Language Processing (EMNLP)}},
+publisher = {ACL},
+year = {2026}
+}
+```

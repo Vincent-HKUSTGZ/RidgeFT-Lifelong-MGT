@@ -8,11 +8,24 @@ version = "1.0.0"
 description = "RidgeFT: exemplar-free analytical continual machine-generated text attribution."
 readme = "README.md"
 requires-python = ">=3.9"
-license = { text = "MIT" }
-authors = [{ name = "RidgeFT authors" }]
+license = { file = "LICENSE" }
+authors = [
+    { name = "Zhen Sun" },
+    { name = "Yifan Liao" },
+    { name = "Zhicong Huang" },
+    { name = "Jiaheng Wei" },
+    { name = "Cheng Hong" },
+    { name = "Yutao Yue" },
+    { name = "Xinlei He" },
+]
 dependencies = [
     "numpy>=1.23",
 ]
+
+[project.urls]
+Homepage = "https://github.com/Vincent-HKUSTGZ/RidgeFT-Lifelong-MGT"
+Repository = "https://github.com/Vincent-HKUSTGZ/RidgeFT-Lifelong-MGT"
+Issues = "https://github.com/Vincent-HKUSTGZ/RidgeFT-Lifelong-MGT/issues"
 
 [tool.setuptools]
 packages = ["ridgeft"]
